@@ -1,5 +1,6 @@
 import React from 'react'
 //import { Link} from 'react-router-dom'
+import AppFrame from './../components/AppFrame' 
 import Grid from '@material-ui/core/Grid'
 import CityInfo from './../components/CityInfo'
 import Weather from './../components/Weather'
@@ -65,10 +66,12 @@ const CityPage = () => {
 
 
     return (
-    <Grid container
-    justify="space-around"
-    direction="column"
-    spacing={3}>
+        <AppFrame>
+
+        <Grid container
+            justify="space-around"
+            direction="column"
+            spacing={3}>
         <Grid item container 
             xs={12}
             justify="center"
@@ -93,6 +96,9 @@ const CityPage = () => {
         </Grid>
 
     </Grid>
+
+        </AppFrame>
+    
     )
 }
 
