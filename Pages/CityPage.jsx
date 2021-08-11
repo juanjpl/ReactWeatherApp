@@ -33,6 +33,7 @@ useCityList(cities ,allWeather, onSetAllWeather)
     const forecastItemList = allForecastItemList[cityCode]
 
     const country = countryCode && getCountryNameByCountryCode(countryCode)
+
     const state= weather && weather.state
     const temperature= weather && weather.temperature
     const humidity=  weather && weather.humidity
@@ -43,12 +44,12 @@ useCityList(cities ,allWeather, onSetAllWeather)
         <AppFrame>
 
         <Grid container
-            justifyContent="space-around"
+            justify="space-around"
             direction="column"
             spacing={3}>
         <Grid item container 
             xs={12}
-            justifyContent="center"
+            justify="center"
             alignItems="flex-end">
                 <CityInfo city={city} country={country}/>
         </Grid>

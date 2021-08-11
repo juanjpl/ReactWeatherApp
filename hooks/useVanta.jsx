@@ -7,10 +7,10 @@ const useVanta = () =>{
     const [vanta, setVanta] = useState(0) //vanta va a ser inicializado
 
     //en la primera renderizacion es igual a "nulo", es el valor inicial
-    console.log("myRefDiv.current", myRefDiv.current)
+    //console.log("myRefDiv.current", myRefDiv.current)
 
     useEffect(()=>{
-        console.log("myRefDiv.current(en UseEffect", myRefDiv)
+        //console.log("myRefDiv.current(en UseEffect", myRefDiv)
 
         if(!vanta) {
 
@@ -24,7 +24,7 @@ const useVanta = () =>{
            
            
 
-            console.log("establezco vanta a un valor diferente de 0")
+            //console.log("establezco vanta a un valor diferente de 0")
         }
 
         //al salir de la pantalla debemos detenr el efecto
@@ -36,12 +36,13 @@ const useVanta = () =>{
 
             if(vanta){
                 vanta.destroy()
-                console.log("libero los recursos ")
+                //console.log("libero los recursos ")
             }
         }
     },[vanta]) //con esto me aseguro que siga funcionando bien 
     //si tuviera mas variables  "use"
 
+    return myRefDiv
 
 }
 

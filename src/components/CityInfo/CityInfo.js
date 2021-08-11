@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography'
 const CityInfo = ({city,country}) => {
     return (
         <Grid container
-       
+       justify="center"
         alignItems="center"
        
         >

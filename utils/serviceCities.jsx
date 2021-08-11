@@ -9,4 +9,6 @@ const cities =[
 
 export const getCities = () =>(cities)
 
-export const getCountryNameByCountryCode = (countryCode) => cities.filter( c => c.countryCode === countryCode)[0].country
+export const getCountryNameByCountryCode = (countryCode) => (
+    cities.filter(c => c.countryCode === countryCode)[0].country
+)
